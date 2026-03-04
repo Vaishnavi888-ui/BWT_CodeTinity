@@ -11,7 +11,7 @@ st.write("AI-Based Smart Energy Monitoring & Optimization System")
 # Simulated energy data
 np.random.seed(42)
 hours = list(range(24))
-energy_usage = np.random.normal(50,10,24)
+energy_usage = np.random.normal(50, 10, 24)
 
 # Artificial spikes
 energy_usage[8] = 120
@@ -35,10 +35,7 @@ ax.set_title("Daily Energy Consumption")
 
 st.pyplot(fig)
 
-<<<<<<< HEAD
-=======
 # AI anomaly detection
->>>>>>> e8ecc9fb3498f1cd8a9f4c91806efbc2fa6047cd
 model = IsolationForest(contamination=0.1)
 data["Anomaly"] = model.fit_predict(data[["Energy Usage"]])
 
@@ -55,16 +52,11 @@ st.subheader("AI Recommendations")
 
 if len(anomalies) > 0:
     st.write("⚠ High energy usage detected")
-<<<<<<< HEAD
-=======
     st.write("Suggestions:")
->>>>>>> e8ecc9fb3498f1cd8a9f4c91806efbc2fa6047cd
     st.write("- Turn off unused lights")
     st.write("- Optimize AC usage")
     st.write("- Shift heavy loads to off-peak hours")
 else:
-<<<<<<< HEAD
     st.write("Energy usage is optimal")
-=======
-    st.write("Energy usage is optimal")
->>>>>>> e8ecc9fb3498f1cd8a9f4c91806efbc2fa6047cd
+
+# Hackathon update - energy monitoring improvement
