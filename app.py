@@ -60,4 +60,6 @@ else:
     st.write("Energy usage is optimal")
 
 # Hackathon update - energy monitoring improvement
+# Hackathon update - improving energy monitoring
+
 
