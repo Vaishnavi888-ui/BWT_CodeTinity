@@ -1,4 +1,3 @@
-!pip install streamlit
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -61,3 +60,4 @@ else:
     st.write("Energy usage is optimal")
 
 # Hackathon update - energy monitoring improvement
+
